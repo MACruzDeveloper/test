@@ -1,0 +1,23 @@
+@use "../helpers/variables";
+
+/* grid */
+.container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  @media (min-width: variables.$screenSm){
+    max-width: variables.$containerSm;
+  }
+  @media (min-width: variables.$screenMd){
+    max-width: variables.$containerMd;
+  }
+
+  &.full {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+

@@ -1,0 +1,17 @@
+@use "../helpers/variables";
+
+input[type=text]{
+  appearance: none;
+  box-shadow: none;
+}
+
+button {
+  border: 0;
+  background: none;
+  font-family: variables.$fontPrimary;
+  cursor: pointer;
+  &:focus {
+    outline:0;
+    border:0;
+  }
+}

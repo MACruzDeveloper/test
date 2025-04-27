@@ -1,0 +1,20 @@
+@use "sass:math";
+
+// Columns & gutter
+$numCols: 12;
+$numGutter: 10;
+
+@mixin cols($cols) {
+  width: percentage(math.div($cols, $numCols));
+  padding-left: $numGutter * .1rem;
+  padding-right: $numGutter * .1rem;
+}
+
+@mixin colsNoGutter($cols) {
+  width: percentage(math.div($cols, $numCols));
+}
+
+@mixin colsOffset($cols) {
+  margin-left: percentage(math.div($cols, $numCols));
+}
+

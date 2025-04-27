@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <title>{{ titleHead }}</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="page home">
+        {{> header }}
+      
+        <main class="main">
+          <section class="carousel">
+            <div class="container full">
+              <div class="carousel_image">
+                <img src="{{route}}assets/images/fondo.jpg" alt="">
+              </div>
+
+              <div class="carousel_caption">
+                <h1 class="title">Ruta por Australia</h1>
+                <p class="desc">Si te va la aventura, no te lo puedes perder</p>
+                <a href="#" class="btn btn_secondary">Más información</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="adventure">
+            <div class="container">
+              <div class="adventure_top">
+                <h2 class="title">Vive tus propias aventuras</h2>
+                <p class="desc">Para los que les gusta explorar y conocer mundo sin complejos</p>
+              </div>
+
+              <div class="adventure_filters">
+                <button class="btn btn_filters">
+                  <img src="{{route}}assets/icons/icon-filter.svg" alt="">
+                  <span>Ver Filtros</span>
+                </button>
+              </div>
+
+              <div class="adventure_content">
+                <div class="adventure_continent">
+                  <div class="adventure_continent-cards">
+                    <h3 class="title">Asia</h3>
+
+                    {{> card1 }}
+                    {{> card2 }}
+                    {{> card1 }}
+                    {{> card2 }}
+                    {{> card1 }}
+                  </div>
+                </div>
+
+                <div class="adventure_continent">
+                  <div class="adventure_continent-cards">
+                    <h3 class="title">Europe</h3>
+
+                    {{> card1 }}
+                    {{> card2 }}
+                    {{> card1 }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <p>@2024 Waveless - Todos los derechos reservados.</p>
+        </footer>
+      </div>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>

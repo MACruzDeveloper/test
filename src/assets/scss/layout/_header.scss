@@ -1,0 +1,130 @@
+@use "sass:map";
+@use "../helpers/variables";
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  padding: 0 2rem;
+  border-bottom: 0.1rem solid variables.$colorOrange;
+
+  &_flex {
+    min-height: map.get(variables.$header-height, 'small');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_logo {
+    margin-right: 4rem;
+  }
+
+  &_nav {
+    display: none;
+    @media (min-width: variables.$screenSm) {
+      display: block;
+    }
+
+    &--open {
+      display: block;
+      width: 50%;
+      position: absolute;
+      top: map.get(variables.$header-height, 'small');
+      right: 1rem;
+      z-index: 500;
+      background-color: white;
+      border-top: 0.1rem solid variables.$colorText;
+    }
+    
+    &_list {
+      @media (min-width: variables.$screenSm) {
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        font-size: 1.6rem;
+        padding: 1.5rem 2rem;
+        text-decoration: none;
+        border-bottom: 0.1rem solid transparent;
+        transition: all .3s ease-in-out;
+        @media (min-width: variables.$screenSm) {
+          min-height: map.get(variables.$header-height, 'medium');
+          padding: 0 1rem;
+          justify-content: flex-start;
+        }
+        @media (min-width: variables.$screenLg) {
+          padding: 0 2rem;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          border-bottom: 10px solid variables.$colorOrange;
+          border-top: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          transition: all .3s ease-in-out;
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        &:hover {
+          border-color: variables.$colorOrange;
+
+          &::after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+
+      .icon {
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &_mobile {
+    @media (min-width: variables.$screenSm) {
+      display: none;
+    }
+
+    .btn_nav {
+      > span {
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+        background: url(./assets/icons/icon-burger.svg) no-repeat;
+        background-size: 100%;
+      }
+
+      &--open {
+        > span {
+          background: url(./assets/icons/icon-close.svg) no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+
+  &_right {
+    display: none;
+    @media (min-width: variables.$screenSm) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

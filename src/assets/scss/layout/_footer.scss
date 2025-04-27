@@ -1,0 +1,14 @@
+@use "../helpers/variables";
+
+.footer {
+  background-color: variables.$colorFooterBack;
+  padding: 1.6rem;
+  text-align: center;
+
+  > p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: variables.$fontSecondary;
+    color: variables.$colorCardTitle;
+  }
+}

@@ -1,0 +1,40 @@
+/* BREAKPOINTS */
+/* 480px */
+$containerXs: 48rem;
+$screenXs: 30em;
+/* 768px */
+$containerSm: 76.8rem;
+$screenSm: 48em;
+/* 992px */
+$containerMd: 99.2rem;
+$screenMd: 62em;
+/* 1200px */
+$containerLg: 120rem;
+$screenLg: 75em;
+
+
+/* FONTS */
+$fontPrimary: "Syne", sans-serif;
+$fontSecondary: "Nunito", sans-serif;
+
+
+/* COLORS */
+$colorOrange: #FF8F50;
+$colorText: #2F222F;
+$colorTextSoft: #6B7D8D;
+$colorTag: #342E34;
+$colorCardTitle: #622F60;
+$colorCardBack: #FBF6F4;
+$colorBtnFilter: #2F222F;
+$colorFooterBack: #E0D9E0;
+$colorBtnPrimaryHover: #471F45;
+$colorBtnSecondaryText: #4E250E;
+$colorBtnSecondaryHover: #D67843;
+
+
+/* DIMENSIONS */
+$header-height: (
+  small: 5.6rem,
+  medium: 8rem,
+  large: 8rem
+)

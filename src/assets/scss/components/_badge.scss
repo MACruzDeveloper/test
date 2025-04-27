@@ -1,0 +1,16 @@
+@use "../helpers/variables";
+
+.badge {
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+  z-index: 20;
+  font-size: 1.2rem;
+  font-family: variables.$fontSecondary;
+  line-height: 1.6rem;
+  font-weight: 800;
+  background-color: variables.$colorOrange;
+  color: variables.$colorTag;
+  border-radius: 4rem;
+  padding: 0.4rem 1.2rem;
+}

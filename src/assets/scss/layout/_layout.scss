@@ -1,0 +1,23 @@
+@use "sass:map";
+@use "../helpers/variables";
+
+/* Resources */
+.flex {
+  @media (min-width: variables.$screenSm){
+    display: flex;
+  }
+}
+
+.grid {
+  @media (min-width: variables.$screenSm){
+    display: grid;
+  }
+}
+
+a {
+  color: variables.$colorTag;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

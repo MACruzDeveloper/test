@@ -1,0 +1,65 @@
+@use "../helpers/variables";
+
+
+.btn {
+  width: 100%;
+  min-height: 4rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  font-family: variables.$fontSecondary;
+  text-align: center;
+  padding: 0.8rem 2.4rem;
+  border-radius: 20.8rem;
+  transition: all .3s ease-in-out;
+
+  &_primary {
+    background-color: variables.$colorCardTitle;
+    color: white;
+
+    &:hover {
+      background-color: variables.$colorBtnPrimaryHover;
+    }
+  }
+
+  &_secondary {
+    background-color: variables.$colorOrange;
+    color: variables.$colorBtnSecondaryText;
+    padding: 1.2rem 2.4rem;
+
+    &:hover {
+      background-color: variables.$colorBtnSecondaryHover;
+    }
+  }
+
+  &_tertiary {
+    border: 1px solid variables.$colorCardTitle;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &_filters {
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: variables.$colorBtnFilter;
+    border: 1px solid;
+    border-image-source: linear-gradient(0deg, #FAF7F5, #FAF7F5), linear-gradient(0deg, #EFEBED, #EFEBED);
+    padding: 0.8rem 1.4rem;
+  }
+
+  &_link {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    font-family: variables.$fontSecondary;
+    color: variables.$colorCardTitle;
+
+    > span {
+      text-decoration: underline;
+    }
+  }
+}

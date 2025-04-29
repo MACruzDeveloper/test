@@ -1,0 +1,45 @@
+<aside class="adventure_filters-content">
+  <div class="adventure_filters-content-header">
+    <p class="tit">Filtrar mi búsqueda</p>
+    <button id="btnCloseFilters" class="btn_icon">
+      <img src="{{route}}assets/icons/icon-close.svg" alt="close">
+    </button>
+  </div>
+
+  <div class="adventure_filters-content-list">
+    <div class="adventure_filters-content-list-item">
+      <button class="btn btn_accordeon">
+        <img src="{{route}}assets/icons/icon-adventure.svg" class="icon" alt="">
+        <span>Destinos</span>
+        <img src="{{route}}assets/icons/icon-arrow_right.svg" class="icon arrow" alt="">
+      </button>
+    </div>
+
+    <div class="adventure_filters-content-list-item">
+      <button class="btn btn_accordeon btn_accordeon--active">
+        <img src="{{route}}assets/icons/icon-adventure.svg" class="icon" alt="">
+        <span>Aventura</span>
+        <img src="{{route}}assets/icons/icon-arrow_right.svg" class="icon arrow" alt="">
+      </button>
+      
+      <ul>
+        <li>
+          <input type="checkbox" id="quad">
+          <label for="quad">Quad</label>
+        </li>
+        <li>
+          <input type="checkbox" id="parapente">
+          <label for="parapente">Parapente</label>
+        </li>
+        <li>
+          <input type="checkbox" id="rafting">
+          <label for="rafting">Rafting</label>
+        </li>
+        <li>
+          <input type="checkbox" id="surf">
+          <label for="surf">Surf</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>

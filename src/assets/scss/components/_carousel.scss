@@ -1,7 +1,8 @@
 @use "../helpers/variables";
+@use "sass:map";
 
 .carousel {
-  height: 40rem;
+  height: map.get(variables.$carousel-height, 'small');
   position: relative;
 
   &_image {

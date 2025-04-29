@@ -2,6 +2,12 @@
 @use "../helpers/variables";
 
 /* Resources */
+body {
+  &.body--open {
+    overflow: hidden;
+  }
+}
+
 .flex {
   @media (min-width: variables.$screenSm){
     display: flex;

@@ -62,4 +62,33 @@
       text-decoration: underline;
     }
   }
+
+  &_accordeon {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+
+    &--active {
+      color: variables.$colorOrange2;
+
+      .icon {
+        filter: brightness(0) saturate(100%) invert(36%) sepia(83%) saturate(487%) hue-rotate(338deg) brightness(98%) contrast(90%);
+      }
+
+      .arrow {
+        transform: rotate(-270deg);
+      }
+    }
+
+    > span {
+      flex-grow: 1;
+      margin-left: 1rem;
+    }
+
+    .arrow {
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+  }
 }

@@ -13,6 +13,9 @@
   @media (min-width: variables.$screenMd){
     max-width: variables.$containerMd;
   }
+  @media (min-width: variables.$screenLg){
+    max-width: variables.$containerLg;
+  }
 
   &.full {
     max-width: none;

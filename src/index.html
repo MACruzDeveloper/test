@@ -41,12 +41,14 @@
                   <img src="{{route}}assets/icons/icon-filter.svg" alt="">
                   <span>Ver Filtros</span>
                 </button>
+
+                {{> filters }}
               </div>
 
               <div class="adventure_content">
                 <div class="adventure_continent">
                   <div class="adventure_continent-cards">
-                    <h3 class="title">Asia</h3>
+                    <h3 class="adventure_continent-cards-title">Asia</h3>
 
                     {{> card1 }}
                     {{> card2 }}
@@ -58,7 +60,7 @@
 
                 <div class="adventure_continent">
                   <div class="adventure_continent-cards">
-                    <h3 class="title">Europe</h3>
+                    <h3 class="adventure_continent-cards-title">Europe</h3>
 
                     {{> card1 }}
                     {{> card2 }}

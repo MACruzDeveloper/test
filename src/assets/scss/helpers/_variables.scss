@@ -9,8 +9,8 @@ $screenSm: 48em;
 $containerMd: 99.2rem;
 $screenMd: 62em;
 /* 1200px */
-$containerLg: 120rem;
-$screenLg: 75em;
+$containerLg: 128rem;
+$screenLg: 80em;
 
 
 /* FONTS */
@@ -20,6 +20,7 @@ $fontSecondary: "Nunito", sans-serif;
 
 /* COLORS */
 $colorOrange: #FF8F50;
+$colorOrange2: #B85C28;
 $colorText: #2F222F;
 $colorTextSoft: #6B7D8D;
 $colorTag: #342E34;
@@ -37,4 +38,10 @@ $header-height: (
   small: 5.6rem,
   medium: 8rem,
   large: 8rem
-)
+);
+
+$carousel-height: (
+  small: 40rem,
+  medium: 40rem,
+  large: 40rem
+);

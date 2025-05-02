@@ -5,6 +5,7 @@
 /* ADVENTURE SECTION */
 .adventure {
   padding: 4rem 0;
+  position: relative;
 
   &_top {
     max-width: 32.6rem;
@@ -29,9 +30,9 @@
   &_filters {
     display: flex;
     justify-content: center;
-    position: relative;
     margin-bottom: 2rem;
     @media (min-width: variables.$screenLg) {
+      position: relative;
       margin: 0;
     }
 

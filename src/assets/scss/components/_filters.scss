@@ -10,21 +10,25 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 600;
+  z-index: 5000;
   background: var(--button-show-filter-background-default, #FBF6F4);
   overflow-y: auto;
   @media (min-width: variables.$screenSm) {
     width: 29.6rem;
-    top: map.get(variables.$header-height, 'medium') + map.get(variables.$carousel-height, 'medium');
+    max-height: calc(100vh - map.get(variables.$header-height, 'small') + map.get(variables.$carousel-height, 'medium'));
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 500;
+    box-shadow: 4px 4px 8px 0px #00000033;
   }
   @media (min-width: variables.$screenLg) {
     display: block;
     width: 26.4rem;
     height: 89.6rem;
-    position: absolute;
-    top: 0;
-    left: 0;
     border-radius: 2.4rem;
+    box-shadow: none;
   }
 
   &--open {

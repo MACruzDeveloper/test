@@ -2,6 +2,10 @@
 @use "../helpers/variables";
 
 /* Resources */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   &.body--open {
     overflow: hidden;

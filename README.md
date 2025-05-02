@@ -18,7 +18,7 @@
 
 ## TODO
   - Crear guía de estilos a partir de Figma
-  - Maquetar carrusel
-  - Maquetar Filtros
+  - Crear carrusel
+  - Completar Filtros
   - Maquetar modal/tooltip desglose
-  - Análisis y mejoras en accesibilidad, SEO y WPO.
+  - Análisis y mejoras en accesibilidad, UX, SEO y WPO.

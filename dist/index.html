@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <title>Avoris - home</title>
-    <script type="module" crossorigin src="./assets/main-DmukbNLG.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-B8uuwS0_.css">
+    <script type="module" crossorigin src="./assets/main-CzExQ3dM.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-s4exbqXV.css">
   </head>
   <body>
     <div id="app">
@@ -76,7 +76,7 @@
             </div>
           </section>
 
-          <section class="adventure">
+          <section id="adventure" class="adventure">
             <div class="container">
               <div class="adventure_top">
                 <h2 class="title">Vive tus propias aventuras</h2>
@@ -88,14 +88,59 @@
                   <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M3.33301%206H20.6663'%20stroke='%232F222F'%20stroke-width='1.7'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M6.66602%2012H17.3327'%20stroke='%232F222F'%20stroke-width='1.7'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M10%2018H14'%20stroke='%232F222F'%20stroke-width='1.7'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" alt="">
                   <span>Ver Filtros</span>
                 </button>
-              </div>
+
+                <aside class="adventure_filters-content">
+                  <div class="adventure_filters-content-header">
+                    <p class="tit">Filtrar mi búsqueda</p>
+                    <button id="btnCloseFilters" class="btn_icon">
+                      <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cmask%20id='mask0_10175_4990'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='24'%20height='24'%3e%3crect%20width='24'%20height='24'%20fill='%23D9D9D9'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_10175_4990)'%3e%3cpath%20d='M18.8998%2017.4998C19.0998%2017.6998%2019.1998%2017.8998%2019.1998%2018.1998C19.1998%2018.4998%2019.0998%2018.6998%2018.8998%2018.8998C18.6998%2019.0998%2018.4998%2019.1998%2018.1998%2019.1998C17.8998%2019.1998%2017.6998%2019.0998%2017.4998%2018.8998L11.9998%2013.3998L6.4998%2018.8998C6.2998%2019.0998%206.0998%2019.1998%205.7998%2019.1998C5.4998%2019.1998%205.2998%2019.0998%205.0998%2018.8998C4.8998%2018.6998%204.7998%2018.4998%204.7998%2018.1998C4.7998%2017.8998%204.8998%2017.6998%205.0998%2017.4998L10.5998%2011.9998L5.0998%206.4998C4.9998%206.2998%204.8998%206.0998%204.8998%205.7998C4.8998%205.4998%204.9998%205.2998%205.1998%205.0998C5.5998%204.6998%206.1998%204.6998%206.5998%205.0998L12.0998%2010.5998L17.5998%205.0998C17.7998%204.8998%2017.9998%204.7998%2018.2998%204.7998C18.5998%204.7998%2018.7998%204.8998%2018.9998%205.0998C19.1998%205.2998%2019.2998%205.4998%2019.2998%205.7998C19.2998%206.0998%2018.9998%206.2998%2018.8998%206.4998L13.3998%2011.9998L18.8998%2017.4998Z'%20fill='%23342E34'/%3e%3c/g%3e%3c/svg%3e" alt="close">
+                    </button>
+                  </div>
+                
+                  <div class="adventure_filters-content-list">
+                    <div class="adventure_filters-content-list-item">
+                      <button class="btn btn_accordeon">
+                        <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_10175_1740)'%3e%3cpath%20d='M16.2256%206.75C17.2611%206.75%2018.1006%205.91053%2018.1006%204.875C18.1006%203.83947%2017.2611%203%2016.2256%203C15.1901%203%2014.3506%203.83947%2014.3506%204.875C14.3506%205.91053%2015.1901%206.75%2016.2256%206.75Z'%20stroke='%23342E34'%20stroke-width='1.34'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M1.60059%2018.7501L8.45371%207.11948C8.51988%207.0067%208.61439%206.91318%208.72786%206.84819C8.84134%206.78321%208.96982%206.74902%209.10059%206.74902C9.23135%206.74902%209.35984%206.78321%209.47331%206.84819C9.58678%206.91318%209.68129%207.0067%209.74746%207.11948L16.6006%2018.7501H1.60059Z'%20stroke='%23342E34'%20stroke-width='1.34'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5.5708%2012H12.6302'%20stroke='%23342E34'%20stroke-width='1.34'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.5952%2015.3476L17.6946%2010.1173C17.761%2010.0054%2017.8554%209.91265%2017.9685%209.84826C18.0816%209.78386%2018.2095%209.75%2018.3396%209.75C18.4697%209.75%2018.5976%209.78386%2018.7107%209.84826C18.8238%209.91265%2018.9182%2010.0054%2018.9846%2010.1173L24.1005%2018.7498H16.6005'%20stroke='%23342E34'%20stroke-width='1.34'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_10175_1740'%3e%3crect%20width='24'%20height='24'%20fill='white'%20transform='translate(0.850586)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="icon" alt="">
+                        <span>Destinos</span>
+                        <img src="data:image/svg+xml,%3csvg%20width='8'%20height='14'%20viewBox='0%200%208%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.28967%206.29179C7.68162%206.68256%207.68162%207.31738%207.28967%207.70815L2.21955%2012.7629C1.82927%2013.152%201.19776%2013.152%200.80748%2012.7629L0.710331%2012.666C0.318375%2012.2753%200.318375%2011.6405%200.710331%2011.2497L4.97297%206.99997L0.710331%202.75024C0.318375%202.35947%200.318375%201.72465%200.710331%201.33388L0.807481%201.23703C1.19776%200.847934%201.82927%200.847934%202.21955%201.23703L7.28967%206.29179Z'%20fill='%23342E34'/%3e%3c/svg%3e" class="icon arrow" alt="">
+                      </button>
+                    </div>
+                
+                    <div class="adventure_filters-content-list-item">
+                      <button class="btn btn_accordeon btn_accordeon--active">
+                        <img src="data:image/svg+xml,%3csvg%20width='25'%20height='24'%20viewBox='0%200%2025%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_10175_1740)'%3e%3cpath%20d='M16.2256%206.75C17.2611%206.75%2018.1006%205.91053%2018.1006%204.875C18.1006%203.83947%2017.2611%203%2016.2256%203C15.1901%203%2014.3506%203.83947%2014.3506%204.875C14.3506%205.91053%2015.1901%206.75%2016.2256%206.75Z'%20stroke='%23342E34'%20stroke-width='1.34'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M1.60059%2018.7501L8.45371%207.11948C8.51988%207.0067%208.61439%206.91318%208.72786%206.84819C8.84134%206.78321%208.96982%206.74902%209.10059%206.74902C9.23135%206.74902%209.35984%206.78321%209.47331%206.84819C9.58678%206.91318%209.68129%207.0067%209.74746%207.11948L16.6006%2018.7501H1.60059Z'%20stroke='%23342E34'%20stroke-width='1.34'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M5.5708%2012H12.6302'%20stroke='%23342E34'%20stroke-width='1.34'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M14.5952%2015.3476L17.6946%2010.1173C17.761%2010.0054%2017.8554%209.91265%2017.9685%209.84826C18.0816%209.78386%2018.2095%209.75%2018.3396%209.75C18.4697%209.75%2018.5976%209.78386%2018.7107%209.84826C18.8238%209.91265%2018.9182%2010.0054%2018.9846%2010.1173L24.1005%2018.7498H16.6005'%20stroke='%23342E34'%20stroke-width='1.34'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_10175_1740'%3e%3crect%20width='24'%20height='24'%20fill='white'%20transform='translate(0.850586)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="icon" alt="">
+                        <span>Aventura</span>
+                        <img src="data:image/svg+xml,%3csvg%20width='8'%20height='14'%20viewBox='0%200%208%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.28967%206.29179C7.68162%206.68256%207.68162%207.31738%207.28967%207.70815L2.21955%2012.7629C1.82927%2013.152%201.19776%2013.152%200.80748%2012.7629L0.710331%2012.666C0.318375%2012.2753%200.318375%2011.6405%200.710331%2011.2497L4.97297%206.99997L0.710331%202.75024C0.318375%202.35947%200.318375%201.72465%200.710331%201.33388L0.807481%201.23703C1.19776%200.847934%201.82927%200.847934%202.21955%201.23703L7.28967%206.29179Z'%20fill='%23342E34'/%3e%3c/svg%3e" class="icon arrow" alt="">
+                      </button>
+                      
+                      <ul>
+                        <li>
+                          <input type="checkbox" id="quad" data-filter="quad">
+                          <label for="quad">Quad</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="parapente" data-filter="parapente">
+                          <label for="parapente">Parapente</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="rafting" data-filter="rafting">
+                          <label for="rafting">Rafting</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="surf" data-filter="surf">
+                          <label for="surf">Surf</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </aside>              </div>
 
               <div class="adventure_content">
                 <div class="adventure_continent">
                   <div class="adventure_continent-cards">
-                    <h3 class="title">Asia</h3>
+                    <h3 class="adventure_continent-cards-title">Asia</h3>
 
-                    <div class="adventure_continent-card">
+                    <div class="adventure_continent-card" data-category="surf">
                       <div class="image">
                         <span class="badge">Quads</span>
                         <img src="./assets/bangkok-CicZyGve.png" loading="lazy" alt="Bangkok">
@@ -128,7 +173,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="adventure_continent-card">
+                    <div class="adventure_continent-card" data-category="quad">
                       <div class="image">
                         <span class="badge">Quads</span>
                         <img src="./assets/morocco-zR0EchUn.png" loading="lazy" alt="Morocco">
@@ -144,7 +189,7 @@
                         <p class="price"><span>Desde</span> 249,00 €</p>
                         <button class="btn btn_secondary">Reservar</button>
                       </div>
-                    </div>                    <div class="adventure_continent-card">
+                    </div>                    <div class="adventure_continent-card" data-category="surf">
                       <div class="image">
                         <span class="badge">Quads</span>
                         <img src="./assets/bangkok-CicZyGve.png" loading="lazy" alt="Bangkok">
@@ -177,7 +222,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="adventure_continent-card">
+                    <div class="adventure_continent-card" data-category="parapente">
                       <div class="image">
                         <span class="badge">Quads</span>
                         <img src="./assets/morocco-zR0EchUn.png" loading="lazy" alt="Morocco">
@@ -193,7 +238,40 @@
                         <p class="price"><span>Desde</span> 249,00 €</p>
                         <button class="btn btn_secondary">Reservar</button>
                       </div>
-                    </div>                    <div class="adventure_continent-card">
+                    </div>                    <div class="adventure_continent-card" data-category="quad">
+                      <div class="image">
+                        <span class="badge">Quads</span>
+                        <img src="./assets/bangkok-CicZyGve.png" loading="lazy" alt="Bangkok">
+                      </div>
+                    
+                      <div class="info">
+                        <p class="title">Marruecos, África <span>9 días</span></p>
+                        <p class="desc">Descubre Bangkok con Iberojet</p>
+                      </div>
+                    
+                      <div class="bottom">
+                        <button class="btn_link">
+                          <span>Ver desglose</span>
+                          <img src="data:image/svg+xml,%3csvg%20width='10'%20height='6'%20viewBox='0%200%2010%206'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M5.47182%205.19279C5.21131%205.45409%204.78809%205.45409%204.52758%205.19279L1.15774%201.81271C0.898343%201.55252%200.898343%201.13151%201.15774%200.871328L1.22231%200.806562C1.48282%200.545258%201.90604%200.545258%202.16655%200.806562L4.9997%203.64832L7.83285%200.806561C8.09336%200.545257%208.51658%200.545258%208.77709%200.806562L8.84166%200.871327C9.10105%201.13151%209.10105%201.55252%208.84166%201.81271L5.47182%205.19279Z'%20fill='%23622F60'/%3e%3c/svg%3e" alt="open">
+                        </button>
+                        <p class="price"><span>Desde</span> 249,00 €</p>
+                        <button class="btn btn_tertiary">Reservar</button>
+                      </div>
+                    
+                      <div class="modal modal_desglose">
+                        <div class="modal_header">
+                          <p class="title">Desglose de precios</p>
+                          <button class="btn_icon"></button>
+                        </div>
+                      
+                        <div class="modal_content">
+                          <div class="info">
+                            <p class="title">Marruecos, África <span>9 días</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="adventure_continent-card" data-category="rafting">
                       <div class="image">
                         <span class="badge">Quads</span>
                         <img src="./assets/bangkok-CicZyGve.png" loading="lazy" alt="Bangkok">
@@ -231,9 +309,9 @@
 
                 <div class="adventure_continent">
                   <div class="adventure_continent-cards">
-                    <h3 class="title">Europe</h3>
+                    <h3 class="adventure_continent-cards-title">Europe</h3>
 
-                    <div class="adventure_continent-card">
+                    <div class="adventure_continent-card" data-category="rafting">
                       <div class="image">
                         <span class="badge">Quads</span>
                         <img src="./assets/bangkok-CicZyGve.png" loading="lazy" alt="Bangkok">
@@ -266,7 +344,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="adventure_continent-card">
+                    <div class="adventure_continent-card" data-category="surf">
                       <div class="image">
                         <span class="badge">Quads</span>
                         <img src="./assets/morocco-zR0EchUn.png" loading="lazy" alt="Morocco">
@@ -282,7 +360,7 @@
                         <p class="price"><span>Desde</span> 249,00 €</p>
                         <button class="btn btn_secondary">Reservar</button>
                       </div>
-                    </div>                    <div class="adventure_continent-card">
+                    </div>                    <div class="adventure_continent-card" data-category="rafting">
                       <div class="image">
                         <span class="badge">Quads</span>
                         <img src="./assets/bangkok-CicZyGve.png" loading="lazy" alt="Bangkok">
@@ -315,7 +393,71 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                    <div class="adventure_continent-card" data-category="parapente">
+                      <div class="image">
+                        <span class="badge">Quads</span>
+                        <img src="./assets/morocco-zR0EchUn.png" loading="lazy" alt="Morocco">
+                      </div>
+                    
+                      <div class="info">
+                        <p class="title">Marruecos, África <span>9 días</span></p>
+                        <p class="desc">Descubre Bangkok con Iberojet</p>
+                      </div>
+                    
+                      <div class="bottom">
+                        <button class="btn_link">Ver desglose</button>
+                        <p class="price"><span>Desde</span> 249,00 €</p>
+                        <button class="btn btn_secondary">Reservar</button>
+                      </div>
+                    </div>                    <div class="adventure_continent-card" data-category="parapente">
+                      <div class="image">
+                        <span class="badge">Quads</span>
+                        <img src="./assets/morocco-zR0EchUn.png" loading="lazy" alt="Morocco">
+                      </div>
+                    
+                      <div class="info">
+                        <p class="title">Marruecos, África <span>9 días</span></p>
+                        <p class="desc">Descubre Bangkok con Iberojet</p>
+                      </div>
+                    
+                      <div class="bottom">
+                        <button class="btn_link">Ver desglose</button>
+                        <p class="price"><span>Desde</span> 249,00 €</p>
+                        <button class="btn btn_secondary">Reservar</button>
+                      </div>
+                    </div>                    <div class="adventure_continent-card" data-category="quad">
+                      <div class="image">
+                        <span class="badge">Quads</span>
+                        <img src="./assets/morocco-zR0EchUn.png" loading="lazy" alt="Morocco">
+                      </div>
+                    
+                      <div class="info">
+                        <p class="title">Marruecos, África <span>9 días</span></p>
+                        <p class="desc">Descubre Bangkok con Iberojet</p>
+                      </div>
+                    
+                      <div class="bottom">
+                        <button class="btn_link">Ver desglose</button>
+                        <p class="price"><span>Desde</span> 249,00 €</p>
+                        <button class="btn btn_secondary">Reservar</button>
+                      </div>
+                    </div>                    <div class="adventure_continent-card" data-category="quad">
+                      <div class="image">
+                        <span class="badge">Quads</span>
+                        <img src="./assets/morocco-zR0EchUn.png" loading="lazy" alt="Morocco">
+                      </div>
+                    
+                      <div class="info">
+                        <p class="title">Marruecos, África <span>9 días</span></p>
+                        <p class="desc">Descubre Bangkok con Iberojet</p>
+                      </div>
+                    
+                      <div class="bottom">
+                        <button class="btn_link">Ver desglose</button>
+                        <p class="price"><span>Desde</span> 249,00 €</p>
+                        <button class="btn btn_secondary">Reservar</button>
+                      </div>
+                    </div>                  </div>
                 </div>
               </div>
             </div>
